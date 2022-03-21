@@ -268,11 +268,7 @@ def checkBalance():
     dt = json.loads(ret)
     if dt['status'] == True:
         return dt['data']
-
-    '''
-    {"status":true,"msg":"SUCCESS","data":{"money":"0.0091 PIXT","internalAccountAddress":"0x6fFBb48Cb11ef70a1a8C960f2ADaAe27160cC84F","moneyPower":"0.0000 PIXT","totalMoney":"152.0381","nftTotal":"2","estimatedMoney":"152.0289 PIXT"},"code":"000"}    
-    '''
-
+    
 
 def getFollower():
     uxt = getUnixTime()
@@ -364,7 +360,7 @@ def likeAndComment(author, permlink):
         "language": "en",
         "osVersion": "15.3.1",
         "parent_author": "{}".format(author),
-        "parent_permlink": "{}".format(permlink), #pixie-p16564800-1647811992465
+        "parent_permlink": "{}".format(permlink),
         "permlink": "{}".format(comment_permlink),
         "platform": "2",
         "timestamp": "{}".format(uxt),
