@@ -12,7 +12,7 @@ import pandas as pd
 import string
 
 
-botToken = 'YOUR_BOT_TOKE'
+botToken = 'YOUR_BOT_TOKEN'
 gchatId = 'YOUR_CHANNEL_ID'
 
 # default configuration
@@ -189,7 +189,7 @@ def getNewPost():
                 fn = 'pixie-'+str(df_utc)+'.csv'
                 last_date = dsave.strftime('%Y%m%d')
                 fn2 = 'pixie-'+str(last_date)+'.csv'
-                if str(reset_time) == '00:59':
+                if str(reset_time) == '02:50':
                     df.to_csv(fn)
                     df = pd.DataFrame(columns=['date','postId','author','permlink'])
                 # end reset data
